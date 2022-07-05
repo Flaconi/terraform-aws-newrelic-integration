@@ -72,6 +72,9 @@ data "aws_iam_policy_document" "this" {
       "elasticbeanstalk:Request*",
       "elasticbeanstalk:Retrieve*",
       "elasticbeanstalk:Validate*",
+      "config:BatchGetResourceConfig",
+      "config:ListDiscoveredResources",
+      "elasticloadbalancing:Describe*",
     ]
   }
 }
