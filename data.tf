@@ -66,6 +66,12 @@ data "aws_iam_policy_document" "this" {
       "tag:getResources",
       "tag:getTagKeys",
       "tag:getTagValues",
+      "elasticbeanstalk:Check*",
+      "elasticbeanstalk:Describe*",
+      "elasticbeanstalk:List*",
+      "elasticbeanstalk:Request*",
+      "elasticbeanstalk:Retrieve*",
+      "elasticbeanstalk:Validate*",
     ]
   }
 }
