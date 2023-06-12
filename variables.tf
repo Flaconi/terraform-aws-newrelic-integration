@@ -1,9 +1,13 @@
 variable "newrelic_aws_account" {
   type = string
-  # 754728514883
 }
 
 variable "newrelic_external_id" {
   type = string
-  # 754728514883
+}
+
+variable "tags" {
+  description = "A mapping of tags to assign to all resources"
+  type        = map(string)
+  default     = {}
 }
